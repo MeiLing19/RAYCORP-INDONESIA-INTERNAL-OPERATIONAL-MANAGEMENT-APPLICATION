@@ -34,8 +34,11 @@ Berikut merupakan ruang lingkup dan batasan dalam pengembangan sistem ini, sehin
 
 ### 6.	REFERENSI
 •	Diktat Rekayasa Perangkat Lunak oleh Dr. Adi Nugroho, ST., MMSI
+
 •	https://www.dicoding.com/blog/memahami-class-diagram-lebih-baik/
+
 •	https://badr.co.id/id/panduan-menyusun-dokumen-software-requirement-specification-srs/
+
 
 ### 7.	NAMA SOFTWARE
 Sistem Manajemen Operasional Internal RayCorp Indonesia atau RayCorp Operational Management System disingkat RCOPS.
@@ -49,6 +52,7 @@ Karakter yang disyaratkan dari pengguna RCOPS yaitu pengguna yang familiar denga
 
 ### 3.	PENGGUNA
 Berikut adalah kelima jenis pengguna RCOPS atau yang akan disebut dengan Role, yaitu : 
+
 1.	CEO (Adminstrator) 
 2.	Kasir
 3.	Admin
@@ -92,27 +96,35 @@ Sistem yang dibangun ini sangat bergantung dengan koneksi internet. Sehingga, ji
 ### 6.	SPESIFIKASI PENDUKUNG SOFTWARE
 Berikut merupakan spesifikasi minimun untuk bisa menjalankan RCOPS di perangkat mobile, yaitu : 
 •	Sistem Operasi : Android 10 atau Sistem Operasi yang setingkat (Seperti MIUI, One UI, Color OS dan lainnya) 
+
 •	RAM : 4 GB 
+
 •	ROM : 5 GB 
+
 •	Koneksi Internet : Harus Stabil 
+
 
 ### 7.	BATASAN DESAIN DAN IMPLEMENTASI
 Untuk masalah yang menjadi batasan bagi pihak pengembang, baik dari segi desain dan implementasi yaitu pemberian Label dalam fitur Manajemen Stok, cukup menjadi masalah yang lumayan susah untuk diselesaikan. Karena adanya label yang digunakan pada suatu Stok. Sebagai contoh, barang1 berjumlah 500 di gudang, tetapi 500 barang tersebut tidak semua dalam kondisi sama. Kondisi pada barang tersebut dinyatakan dengan Label, maka dari itu nantinya akan ada pembagian dari 500 barang1 menjadi 100 barang dengan label1 lalu 100 barang lagi dengan label2 dan seterusnya. Sehingga ini akan cukup menjadi persoalan untuk penyimpanannya ke dalam Database. Lalu untuk akses aplikasi hanya bisa melalui koneksi yang sudah disediakan pihak RayCorp, untuk meminimalisir penyalahgunaan sistem ini diluar jam kerja. Maka dari itu pihak pengembang harus bekerja sama dengan pihak penyedia layanan atau provider internet yang akan digunakan RayCorp nantinya. Sehingga untuk bagian ini, tentu akan memakan waktu yang cukup lama untuk pengimplementasiannya, karena perlunya koordinasi dua belah pihak.
-8.	DOKUMENTASI PENGGUNA
+
+### 8.	DOKUMENTASI PENGGUNA
 Berikut merupakan daftar dokumentasi yang akan diberikan ketika sistem sudah selesai dibangun, yaitu : 
 1.	Dokumen SRS
 2.	Mockup Rancangan Sistem (Menggunakan Figma)
+
 Link : [https://bit.ly/lsgfigmasraycorp]
  
 ## ANALISIS KEBUTUHAN
 
 ### 1.	IDENTIFIKASI AKTOR
-NO	AKTOR	DESKRIPSI AKTOR
-1	CEO	Aktor menggunakan sistem ini untuk membuat/mendelete akun karyawan, membuat joblist karyawan, dan melihat Dashboard.
-2	Admin	Aktor menggunakan sistem ini untuk melakukan manajemen stok, menginput presensi dan melihat Dashboard serta Joblist.
-3	Kasir	Aktor menggunakan sistem ini untuk mencatat penjualan, menginput presensi dan melihat Dashboard serta Joblist.
-4	Finance	Aktor menggunakan sistem ini untuk menginput presensi dan melihat Dashboard serta Joblist.
-5	Marketing	Aktor menggunakan sistem ini untuk menginput presensi dan melihat Dashboard serta Joblist.
+| NO  | AKTOR     | DESKRIPSI AKTOR                                                                                                                                  |
+|-----|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | CEO       | Aktor menggunakan sistem ini untuk membuat/menghapus akun karyawan, membuat joblist untuk karyawan, dan melihat dashboard.                       |
+| 2   | Admin     | Aktor menggunakan sistem ini untuk melakukan manajemen stok, menginput presensi, serta melihat dashboard dan joblist.                            |
+| 3   | Kasir     | Aktor menggunakan sistem ini untuk mencatat penjualan, menginput presensi, serta melihat dashboard dan joblist.                                  |
+| 4   | Finance   | Aktor menggunakan sistem ini untuk menginput presensi, serta melihat dashboard dan joblist.                                                      |
+| 5   | Marketing | Aktor menggunakan sistem ini untuk menginput presensi, serta melihat dashboard dan joblist.                                                      |
+
 
 ### 2.	USE CASE DIAGRAM
 
