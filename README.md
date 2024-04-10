@@ -112,7 +112,7 @@ Berikut merupakan daftar dokumentasi yang akan diberikan ketika sistem sudah sel
 1.	Dokumen SRS
 2.	Mockup Rancangan Sistem (Menggunakan Figma)
 
-Link : [https://bit.ly/lsgfigmasraycorp]
+#### Link Figma: https://bit.ly/lsgfigmasraycorp
  
 ## ANALISIS KEBUTUHAN
 
